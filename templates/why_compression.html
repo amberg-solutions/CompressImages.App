@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3M8MX1R9K"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W3M8MX1R9K');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1989163249808749"
+     crossorigin="anonymous">
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ t['why_title'] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app-min.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <link rel="alternate" hreflang="en" href="https://compressimages.app/en" />
+    <link rel="alternate" hreflang="de" href="https://compressimages.app/de" />
+    <link rel="alternate" hreflang="fr" href="https://compressimages.app/fr" />
+    <link rel="alternate" hreflang="es" href="https://compressimages.app/es" />
+    <link rel="alternate" hreflang="it" href="https://compressimages.app/it" />
+    <link rel="alternate" hreflang="nl" href="https://compressimages.app/nl" />
+    <link rel="canonical" href="https://compressimages.app/{{ lang }}" />
+
+    <meta name="description" content="{{ t['why_description'] }}">
+    <meta name="keywords" content="image compressor, compress images online, reduce image size, JPG compressor, PNG compressor, WebP compressor">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="{{ t['why_title'] }}">
+    <meta property="og:description" content="{{ t['why_description'] }}">
+    <meta property="og:url" content="https://compressimages.app/{{ lang }}">
+    <meta property="og:image" content="https://compressimages.app/static/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ t['why_title'] }}">
+    <meta name="twitter:description" content="{{ t['why_description'] }}">
+    <meta name="twitter:image" content="https://compressimages.app/static/og-image.png">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {% for item in t['faq'] %}
+        {
+        "@type": "Question",
+        "name": "{{ item.q|e }}",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{ item.a|e }}"
+        }
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ]
+    }
+    </script>
+
+</head>
+<body>
+    {% include 'header.html' %}
+
+    <section class="why-section">
+        <div class="why-container">
+            <h1>{{ t['why_h1'] }}</h1>
+
+            <div class="benefits">
+                <div class="benefit">
+                    <h2>{{ t['why_fast'] }}</h2>
+                    <p>{{ t['why_fast_text'] }}</p>
+                </div>
+                <div class="benefit">
+                    <h2>{{ t['why_storage'] }}</h2>
+                    <p>{{ t['why_storage_text'] }}</p>
+                </div>
+                <div class="benefit">
+                    <h2>{{ t['why_seo'] }}</h2>
+                    <p>{{ t['why_seo_text'] }}</p>
+                </div>
+            </div>
+            <p class="lead">{{ t['why_extra'] }}</p>
+            <a href="{{ url_for('index', lang=lang) }}" class="cta-btn">{{ t['why_try'] }}</a>
+
+            <h2>{{ t['why_formats_h2'] }}</h2>
+            <p class="formats">
+                {{ t['why_formats_text']|safe }}
+            </p>
+
+            <div class="faq-block">
+            <h2>FAQ</h2>
+            {% for item in t['faq'] %}
+                <div class="faq-item">
+                <h3>{{ item.q }}</h3>
+                <p>{{ item.a }}</p>
+                </div>
+            {% endfor %}
+            </div>
+
+
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+</body>
+
+</html>

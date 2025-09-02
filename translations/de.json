@@ -1,0 +1,98 @@
+{
+  "h1": "Gratis Online Bilder komprimieren",
+  "intro": "Reduziere die Größe deiner Bilder ohne sichtbaren Qualitätsverlust. Unser kostenloser Bildkomprimierer funktioniert direkt im Browser und unterstützt JPG, PNG und WebP.",
+  "benefits": "Schnellere Uploads, kleinere Dateigrößen, bessere Website-Geschwindigkeit und mehr Speicherplatz. Ideal für Webentwickler, Blogger, Schüler und Unternehmen.",
+  "how_it_works_title": "So komprimierst du Bilder online",
+  "how_it_works": [
+    "Lade bis zu 5 Bilder gleichzeitig hoch.",
+    "Wähle deine gewünschte Komprimierungsqualität mit dem Schieberegler.",
+    "Klicke auf „Bilder komprimieren“ und lade deine optimierten Dateien sofort herunter."
+  ],
+  "seo_paragraph": "Die Optimierung von Bildern ist entscheidend für SEO und Nutzererfahrung. Große Bilder verlangsamen Websites und verschwenden Speicherplatz auf mobilen Geräten. Mit unserem kostenlosen Tool kannst du Bilder in Sekundenschnelle online komprimieren – ganz ohne Software-Download.",
+  "title": "Komprimiere Bilder Online kostenlos",
+  "subtitle": "Komprimiere deine Bilder online – kostenlos.",
+  "description": "Bilder online kostenlos komprimieren, ohne sichtbaren Qualitätsverlust. Unterstützt JPG, PNG und WebP. Schnellere Websites, bessere SEO und kleinere Dateigrößen direkt im Browser.",
+  "compress": "Bilder komprimieren",
+  "quality": "Komprimierungsqualität",
+  "original": "Original",
+  "compressed": "Komprimiert",
+  "saved": "Ersparnis",
+  "download": "Herunterladen",
+  "your_images": "Deine komprimierten Bilder",
+  "privacy-h1": "Datenschutzerklärung",
+  "privacy-date": "Gültig ab: 28. August 2025",
+  "privacy-intro-title": "1. Einführung",
+  "privacy-intro": "Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen erfassen, verwenden und schützen, wenn Sie unsere Webanwendung zur Bildkomprimierung nutzen.",
+  "privacy-collect-title": "2. Welche Informationen Wir Erheben",
+  "privacy-collect": "Wir erfassen keine personenbezogenen Daten. Hochgeladene Bilder werden nur temporär verarbeitet und nicht dauerhaft gespeichert.",
+  "privacy-use-title": "3. Wie Wir Ihre Informationen Verwenden",
+  "privacy-use": "Hochgeladene Bilder werden ausschließlich zum Zweck der Komprimierung verwendet. Nach Abschluss der Komprimierung und dem Herunterladen der Dateien werden die Bilder von unseren Servern gelöscht.",
+  "privacy-storage-title": "4. Datenspeicherung und Sicherheit",
+  "privacy-storage": "Alle hochgeladenen Dateien werden nur vorübergehend gespeichert und innerhalb kurzer Zeit automatisch gelöscht. Wir setzen geeignete Sicherheitsmaßnahmen ein, um Ihre Daten während der Verarbeitung zu schützen.",
+  "privacy-thirdparty-title": "5. Dienste Dritter",
+  "privacy-thirdparty": "Wir geben Ihre Daten nicht an Dritte weiter. Allerdings können wir Drittanbieterdienste für Analysen oder Leistungsüberwachung verwenden, die keinen Zugriff auf Ihre hochgeladenen Dateien haben.",
+  "privacy-rights-title": "6. Ihre Rechte",
+  "privacy-rights": "Sie haben das Recht, Informationen über die von uns verarbeiteten Daten anzufordern und die Löschung von Daten zu verlangen, die Sie für zurückgehalten halten.",
+  "privacy-changes-title": "7. Änderungen dieser Erklärung",
+  "privacy-changes": "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite mit einem aktualisierten Gültigkeitsdatum veröffentlicht.",
+  "privacy-contact-title": "8. Kontakt",
+  "privacy-contact": "Wenn Sie Fragen oder Bedenken zu dieser Datenschutzerklärung haben, kontaktieren Sie uns bitte unter info (at) amberg-solutions.ch.",
+  "imprint_title": "Impressum - CompressImages.app",
+  "imprint_description": "Rechtliche Informationen und Impressum von CompressImages.app.",
+  "imprint_h1": "Impressum",
+  "imprint_text": "Dies ist das Impressum von CompressImages.app. Hier finden Sie die rechtlich relevanten Informationen zum Anbieter der Website.",
+
+  "privacy_title": "Datenschutz - CompressImages.app",
+  "privacy_description": "Erfahren Sie, wie CompressImages.app Ihre Daten schützt und verarbeitet.",
+  "privacy_h1": "Datenschutz",
+  "privacy_text": "Wir legen großen Wert auf den Schutz Ihrer Daten. Auf dieser Seite informieren wir Sie über die Verarbeitung und Speicherung personenbezogener Daten.",
+
+  "contact_title": "Kontakt - CompressImages.app",
+  "contact_description": "Nehmen Sie Kontakt mit CompressImages.app auf.",
+  "contact_h1": "Kontakt",
+  "contact_text": "Wenn Sie Fragen oder Anmerkungen haben, können Sie uns jederzeit über diese Seite kontaktieren.",
+
+  "coffee": "Zahl mir einen Kaffee",
+  "switzerland" : "Schweiz",
+  "why_title": "Warum Bildkomprimierung für SEO wichtig ist - CompressImages.app",
+  "why_description": "Erfahren Sie, wie Bildkomprimierung SEO, Ladegeschwindigkeit und Nutzererfahrung verbessert. Sparen Sie Speicherplatz, Bandbreite und steigern Sie Rankings.",
+  "why_h1": "Warum Bildkomprimierung für SEO wichtig ist",
+  "why_fast": "Schnellere Websites",
+  "why_fast_text": "Komprimierte Bilder laden deutlich schneller, verbessern die Core Web Vitals und halten Besucher länger auf der Seite.",
+
+  "why_storage": "Weniger Speicher und Bandbreite",
+  "why_storage_text": "Kleinere Dateien bedeuten geringere Hosting-Kosten und schnellere Auslieferung – besonders wichtig für mobile Nutzer.",
+  "why_extra": "Die Optimierung von Website-Bildern ist eine der einfachsten und effektivsten Methoden, um SEO zu verbessern. Moderne Kompressionstechniken reduzieren die Dateigröße ohne sichtbaren Qualitätsverlust und sorgen dafür, dass Seiten schneller auf Desktop und Mobilgeräten laden. Schnellere Websites senken die Absprungrate, steigern die Nutzerbindung und verschaffen Ihnen einen Wettbewerbsvorteil in den Suchergebnissen. In Kombination mit weiteren Performance-Best-Practices erreichen Sie bessere Rankings und bieten jedem Besucher ein optimales Erlebnis.",
+  "why_formats_h2": "Das richtige Bildformat wählen",
+  "why_formats_text": "Die Wahl des richtigen Bildformats ist genauso wichtig wie die Komprimierung. Für Fotos ist <a href='https://developer.mozilla.org/de/docs/Web/Media/Formats/Image_types#jpeg' target='_blank' rel='noopener'>JPEG</a> eine gängige Wahl, da es Qualität und Dateigröße gut ausbalanciert. Für Grafiken oder Symbole mit Transparenz bietet <a href='https://developer.mozilla.org/de/docs/Web/Media/Formats/Image_types#png' target='_blank' rel='noopener'>PNG</a> gestochen scharfe Details. Das moderne <a href='https://developers.google.com/speed/webp' target='_blank' rel='noopener'>WebP</a>-Format ermöglicht eine deutlich bessere Komprimierung und reduziert die Dateigröße oft um mehr als 25% im Vergleich zu JPEG und PNG. Google empfiehlt außerdem Next-Gen-Formate wie WebP und <a href='https://aomediacodec.github.io/av1-avif/' target='_blank' rel='noopener'>AVIF</a>, um <a href='https://web.dev/uses-responsive-images/' target='_blank' rel='noopener'>Core Web Vitals</a> und die Gesamtleistung zu verbessern.",
+
+  "why_seo": "Bessere SEO-Rankings",
+  "why_seo_text": "Suchmaschinen belohnen schnelle Seiten. Bildkomprimierung verbessert Ihre Sichtbarkeit in Google.",
+  "why_try" : "Probier unsere kostenlose Bild Komprimierung",
+  "select" : "Bilder wählen",
+  "none-selected" : "Keine Bilder ausgewählt",
+  "selected" : "Dateien ausgewählt",
+  "format" : "Ausgabeformat",
+  "error_h1" : "Fehler",
+  "error_text" : "Tut uns leid, es gab einen Fehler. Versuche es später nochmals, oder kontaktiere uns wenn das Problem bestehen bleibt.",
+  "faq": [
+    {
+      "q": "Warum macht Bildkomprimierung Websites schneller?",
+      "a": "Komprimierte Bilder reduzieren die Dateigröße, wodurch Seiten schneller laden, Core Web Vitals verbessern und Besucher länger bleiben."
+    },
+    {
+      "q": "Wie spart Bildkomprimierung Speicher und Bandbreite?",
+      "a": "Kleinere Bilddateien senken Hosting-Kosten und ermöglichen schnellere Auslieferung – besonders wichtig für mobile Nutzer mit wenig Datenvolumen."
+    },
+    {
+      "q": "Verbessert Bildkomprimierung SEO-Rankings?",
+      "a": "Ja. Suchmaschinen wie Google belohnen schnelle Websites mit besseren Platzierungen. Bildkomprimierung verbessert Ladezeit und Sichtbarkeit direkt."
+    },
+    {
+      "q": "Welche Bildformate sollte ich fürs Web verwenden?",
+      "a": "JPEG eignet sich für Fotos, PNG für Grafiken mit Transparenz. Moderne Formate wie WebP oder AVIF bieten beste Komprimierung bei hoher Qualität."
+    }
+  ],
+  "download_all" : "Alle herunterladen"
+
+}

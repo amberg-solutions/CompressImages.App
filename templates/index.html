@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3M8MX1R9K"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W3M8MX1R9K');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1989163249808749"
+     crossorigin="anonymous">
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ t['title'] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app-min.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <link rel="alternate" hreflang="en" href="https://compressimages.app/en" />
+    <link rel="alternate" hreflang="de" href="https://compressimages.app/de" />
+    <link rel="alternate" hreflang="fr" href="https://compressimages.app/fr" />
+    <link rel="alternate" hreflang="es" href="https://compressimages.app/es" />
+    <link rel="alternate" hreflang="it" href="https://compressimages.app/it" />
+    <link rel="alternate" hreflang="nl" href="https://compressimages.app/nl" />
+    <link rel="canonical" href="https://compressimages.app/{{ lang }}" />
+
+    <meta name="description" content="{{ t['description'] }}">
+    <meta name="keywords" content="image compressor, compress images online, reduce image size, JPG compressor, PNG compressor, WebP compressor">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="{{ t['title'] }}">
+    <meta property="og:description" content="{{ t['description'] }}">
+    <meta property="og:url" content="https://compressimages.app/{{ lang }}">
+    <meta property="og:image" content="https://compressimages.app/static/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ t['title'] }}">
+    <meta name="twitter:description" content="{{ t['description'] }}">
+    <meta name="twitter:image" content="https://compressimages.app/static/og-image.png">
+
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "{{ t['title'] }}",
+    "description": "{{ t['description'] }}",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "All",
+    "url": "https://compressimages.app/{{ lang }}",
+    "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+    }
+    }
+    </script>
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+
+    <div class="container">
+
+        <h1>{{ t["h1"] }}</h1>
+        <p><strong>{{ t['subtitle'] }}</strong></p>
+
+        <p>{{ t["intro"] }}</p>
+
+        <h2>{{ t["how_it_works_title"] }}</h2>
+        <div class="howto-box">
+            <ul>
+            {% for step in t["how_it_works"] %}
+                <li>{{ step }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+
+
+        <p>{{ t["seo_paragraph"] }}</p>
+        <hr>
+        <form id="upload" method="POST" enctype="multipart/form-data" class="form-box">
+            <div class="form-group">
+                <input type="file" name="images" id="fileInput" accept="image/*" multiple required>
+                <label for="fileInput" class="custom-file-upload">
+                    📂 {{ t['select'] }}
+                </label>
+                <span id="file-name">{{ t['none-selected'] }}</span>
+            </div>
+
+            <div class="form-group">
+                <label for="format">{{ t['format'] }}:</label>
+                <select name="format" id="format">
+                    <option value="JPEG">JPEG</option>
+                    <option value="PNG">PNG</option>
+                    <option value="WEBP">WebP</option>
+                </select>
+            </div>
+
+            <div class="form-group slider-group">
+                <label for="quality">{{ t['quality'] }}: <span id="qualityValue">40</span>%</label>
+                <input type="range" name="quality" id="quality" min="1" max="100" value="40" oninput="qualityValue.innerText = this.value">
+            </div>
+
+            <div class="form-group">
+                <button type="submit">{{ t['compress'] }}</button>
+            </div>
+        </form>
+
+
+        {% if compressed and results %}
+        <div class="download">
+            <h2>{{ t['your_images'] }}</h2>
+            <div class="download-list" style="margin-bottom: 15px;">
+                {% for result in results %}
+                <div class="download-item">
+                    <div class="file-info">
+                        <img src="/static/image-icon.png" alt="Image Icon" class="thumb">
+                        <span class="filename">compressed_{{ loop.index }}.{{ format }}</span>
+                    </div>
+                    <div class="size-info">
+                        <p style="font-size: 13px;">
+                            {{ t['original'] }}: {{ result.kbBefore }} KB<br>
+                            {{ t['compressed'] }}: {{ result.kbAfter }} KB<br>
+                            {{ t['saved'] }}: {{ result.saved }} KB
+                        </p>
+                    </div>
+
+                    <a href="{{ url_for('download', lang=lang, uid=result.uid, format=format) }}" 
+                    class="download-btn">
+                    {{ t['download'] }}
+                    </a>
+
+                </div>
+                {% endfor %}
+            </div>
+
+            {% if results|length > 1 %}
+            <a href="{{ url_for('download_all', lang=lang, format=format) }}&uids={{ results | map(attribute='uid') | join('&uids=') }}"
+            class="download-btn all">
+            {{ t['download_all'] }}
+            </a>
+            {% endif %}
+
+        </div>
+        {% endif %}
+
+    </div>
+
+    {% include 'footer.html' %}
+    
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const fileInput = document.getElementById("fileInput");
+  const fileNameEl = document.getElementById("file-name");
+  const singleLinks = document.querySelectorAll(".download-btn:not(.all)");
+  const allBtn = document.querySelector(".download-btn.all");
+
+  if (fileInput && fileNameEl) {
+    fileInput.addEventListener("change", function() {
+      const fileName = this.files.length > 1
+        ? this.files.length + " {{ t['selected'] }}"
+        : this.files[0]?.name || "{{ t['none-selected'] }}";
+      fileNameEl.textContent = fileName;
+    });
+  }
+
+  singleLinks.forEach(link => {
+    link.addEventListener("click", function() {
+      setTimeout(() => {
+        this.textContent = "Downloaded";
+        this.classList.add("disabled");
+      }, 200);
+    });
+  });
+
+  if (allBtn) {
+    allBtn.addEventListener("click", function() {
+      setTimeout(() => {
+        this.textContent = "Downloaded All";
+        this.classList.add("disabled");
+        singleLinks.forEach(l => {
+          l.textContent = "Downloaded";
+          l.classList.add("disabled");
+        });
+      }, 200);
+    });
+  }
+});
+</script>
+
+</body>
+</html>

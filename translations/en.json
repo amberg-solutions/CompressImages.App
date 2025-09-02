@@ -1,0 +1,101 @@
+{
+  "h1": "Free Online Image Compressor",
+  "intro": "Reduce the size of your images without losing visible quality. Our free image compressor works directly in your browser and supports JPG, PNG and WebP.",
+  "benefits": "Faster uploads, smaller file sizes, better website speed and more storage space. Ideal for web developers, bloggers, students and businesses.",
+  "how_it_works_title": "How to compress images online",
+  "how_it_works": [
+    "Upload up to 5 images at once.",
+    "Choose your preferred compression quality with the slider.",
+    "Click 'Compress Images' and download your optimized files instantly."
+  ],
+  "seo_paragraph": "Optimizing images is essential for SEO and user experience. Large images slow down websites and waste storage on mobile devices. With our free tool, you can compress images online in seconds, no software download required.",
+  "title": "Compress Images Online for Free – JPG, PNG & WebP Optimizer",
+  "subtitle" : "Compress your images online for free.",
+  "description": "Compress images online for free without losing visible quality. Supports JPG, PNG and WebP. Faster websites, better SEO and smaller file sizes directly in your browser.",
+  "compress": "Compress Images",
+  "quality": "Compression Quality",
+  "original" : "Original",
+  "compressed" : "Compressed",
+  "saved" : "Saved",
+  "download" : "Download",
+  "your_images" : "Your compressed images",
+  "privacy-h1": "Privacy Policy",
+  "privacy-date": "Effective Date: August 28, 2025",
+  "privacy-intro-title": "1. Introduction",
+  "privacy-intro": "This Privacy Policy explains how we collect, use, and protect your information when you use our image compression web application.",
+  "privacy-collect-title": "2. Information We Collect",
+  "privacy-collect": "We do not collect any personally identifiable information. Uploaded images are processed temporarily and are not stored permanently.",
+  "privacy-use-title": "3. How We Use Your Information",
+  "privacy-use": "Uploaded images are used solely for the purpose of compression. Once the compression process is complete and the files are downloaded, the images are deleted from our servers.",
+  "privacy-storage-title": "4. Data Storage and Security",
+  "privacy-storage": "All uploaded files are stored temporarily and are automatically deleted within a short period. We implement appropriate security measures to protect your data during processing.",
+  "privacy-thirdparty-title": "5. Third-Party Services",
+  "privacy-thirdparty": "We do not share your data with third parties. However, we may use third-party services for analytics or performance monitoring, which do not access your uploaded files.",
+  "privacy-rights-title": "6. Your Rights",
+  "privacy-rights": "You have the right to request information about the data we process and to request deletion of any data you believe we may have retained.",
+  "privacy-changes-title": "7. Changes to This Policy",
+  "privacy-changes": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.",
+  "privacy-contact-title": "8. Contact Us",
+  "privacy-contact": "If you have any questions or concerns about this Privacy Policy, please contact us at info@amberg-solutions.ch.",
+  "imprint" : "Imprint",
+  "privacy" : "Privacy",
+  "contact" : "Contact",
+  "coffee" : "Buy me a coffee",
+  "imprint_title": "Imprint - CompressImages.app",
+  "imprint_description": "Legal information and imprint of CompressImages.app.",
+  "imprint_h1": "Imprint",
+  "imprint_text": "This is the imprint of CompressImages.app. Here you will find the legally required information about the website operator.",
+
+  "privacy_title": "Privacy Policy - CompressImages.app",
+  "privacy_description": "Learn how CompressImages.app protects and processes your data.",
+  "privacy_h1": "Privacy Policy",
+  "privacy_text": "We take your privacy seriously. This page explains how we collect, process, and store personal information.",
+
+  "contact_title": "Contact - CompressImages.app",
+  "contact_description": "Get in touch with CompressImages.app.",
+  "contact_h1": "Contact",
+  "contact_text": "If you have any questions or feedback, you can reach us anytime using the contact form on this page.",
+  "switzerland" : "Switzerland",
+  "why_title": "Why Image Compression Matters for SEO - CompressImages.app",
+  "why_description": "Learn why image compression improves SEO, page speed and user experience. Save bandwidth and boost your website ranking with optimized and compressed images.",
+  "why_h1": "Why Image Compression Matters for SEO",
+  "why_fast": "Faster Websites",
+  "why_fast_text": "Compressed images load much quicker, which directly improves Core Web Vitals and keeps visitors engaged.",
+  "why_extra": "Optimizing website images is one of the simplest and most effective ways to improve SEO. Modern compression techniques reduce file size without visible quality loss, helping pages load faster on desktop and mobile. Faster websites lower bounce rates, increase user engagement, and provide a competitive advantage in search results. By combining image compression with other performance best practices, you can achieve higher rankings and deliver a better experience for every visitor.",
+  "why_try" : "Try our free image compression tool",
+  "why_formats_h2": "Choosing the Right Image Format",
+  "why_formats_text": "Choosing the right image format is just as important as compression. For photographs, <a href='https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types#jpeg' target='_blank' rel='noopener'>JPEG</a> is a common choice because it balances quality and file size. For graphics or icons with transparency, <a href='https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types#png' target='_blank' rel='noopener'>PNG</a> provides sharp details. The modern <a href='https://developers.google.com/speed/webp' target='_blank' rel='noopener'>WebP</a> format offers superior compression, often reducing file size by more than 25% compared to JPEG and PNG. Google also recommends using next-gen formats like WebP and <a href='https://aomediacodec.github.io/av1-avif/' target='_blank' rel='noopener'>AVIF</a> to improve <a href='https://web.dev/uses-responsive-images/' target='_blank' rel='noopener'>Core Web Vitals</a> and overall performance.",
+
+  "why_storage": "Less Storage and Bandwidth",
+  "why_storage_text": "Reducing file size means lower hosting costs and faster delivery, especially important for mobile users.",
+
+  "why_seo": "Better SEO Rankings",
+  "why_seo_text": "Search engines reward fast-loading pages. Image compression boosts your visibility in Google search results.",
+
+  "select" : "Select Images",
+  "none-selected" : "No images selected",
+  "selected" : "files selected",
+  "format" : "Output format",
+  "error_h1" : "Error",
+  "error_text" : "We're sorry, there was an error. Try again later or contact us if the issue persists.",
+  "faq": [
+    {
+      "q": "Why does image compression make websites faster?",
+      "a": "Compressed images reduce file size, which allows pages to load faster, improves Core Web Vitals, and keeps visitors engaged."
+    },
+    {
+      "q": "How does image compression save storage and bandwidth?",
+      "a": "Smaller image files reduce hosting costs and deliver content more quickly, especially important for mobile users with limited bandwidth."
+    },
+    {
+      "q": "Does image compression improve SEO rankings?",
+      "a": "Yes. Search engines like Google reward fast-loading websites with better rankings. Image compression directly improves page speed and SEO visibility."
+    },
+    {
+      "q": "Which image formats should I use for the web?",
+      "a": "JPEG is great for photos, PNG for graphics with transparency, and WebP or AVIF offer modern compression with smaller file sizes and excellent quality."
+    }
+  ],
+  "download_all" : "Download all"
+
+}

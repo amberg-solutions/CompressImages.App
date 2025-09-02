@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3M8MX1R9K"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W3M8MX1R9K');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1989163249808749"
+     crossorigin="anonymous">
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ t['privacy_title'] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app-min.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    
+    <link rel="alternate" hreflang="en" href="https://compressimages.app/en/privacy" />
+    <link rel="alternate" hreflang="de" href="https://compressimages.app/de/privacy" />
+    <link rel="alternate" hreflang="fr" href="https://compressimages.app/fr/privacy" />
+    <link rel="alternate" hreflang="es" href="https://compressimages.app/es/privacy" />
+    <link rel="alternate" hreflang="it" href="https://compressimages.app/it/privacy" />
+    <link rel="alternate" hreflang="nl" href="https://compressimages.app/nl/privacy" />
+    <link rel="canonical" href="https://compressimages.app/{{ lang }}/privacy" />
+
+    <meta name="description" content="{{ t['privacy_description'] }}">
+    <meta name="robots" content="noindex, follow">
+
+    <meta property="og:title" content="{{ t['privacy_title'] }}">
+    <meta property="og:description" content="{{ t['privacy_description'] }}">
+    <meta property="og:url" content="https://compressimages.app/{{ lang }}/privacy">
+    <meta property="og:image" content="https://compressimages.app/static/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ t['privacy_title'] }}">
+    <meta name="twitter:description" content="{{ t['privacy_description'] }}">
+    <meta name="twitter:image" content="https://compressimages.app/static/og-image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PrivacyPolicy",
+      "name": "{{ t['privacy_title'] }}",
+      "description": "{{ t['privacy_description'] }}",
+      "url": "https://compressimages.app/{{ lang }}/privacy"
+    }
+    </script>
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <div class="container">
+        <h1>{{ t['privacy-h1'] }}</h1>
+
+        <p>{{ t['privacy-date'] }}</p>
+
+        <h2>{{ t['privacy-intro-title'] }}</h2>
+        <p>{{ t['privacy-intro'] }}</p>
+
+        <h2>{{ t['privacy-collect-title'] }}</h2>
+        <p>{{ t['privacy-collect'] }}</p>
+
+        <h2>{{ t['privacy-use-title'] }}</h2>
+        <p>{{ t['privacy-use'] }}</p>
+
+        <h2>{{ t['privacy-storage-title'] }}</h2>
+        <p>{{ t['privacy-storage'] }}</p>
+
+        <h2>{{ t['privacy-thirdparty-title'] }}</h2>
+        <p>{{ t['privacy-thirdparty'] }}</p>
+
+        <h2>{{ t['privacy-rights-title'] }}</h2>
+        <p>{{ t['privacy-rights'] }}</p>
+
+        <h2>{{ t['privacy-changes-title'] }}</h2>
+        <p>{{ t['privacy-changes'] }}</p>
+
+        <h2>{{ t['privacy-contact-title'] }}</h2>
+        <p>{{ t['privacy-contact'] }}</p>
+    </div>
+
+    {% include 'footer.html' %}
+</body>
+</html>

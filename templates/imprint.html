@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3M8MX1R9K"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W3M8MX1R9K');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1989163249808749"
+     crossorigin="anonymous">
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ t['imprint_title'] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app-min.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    
+    <link rel="alternate" hreflang="en" href="https://compressimages.app/en/imprint" />
+    <link rel="alternate" hreflang="de" href="https://compressimages.app/de/imprint" />
+    <link rel="alternate" hreflang="fr" href="https://compressimages.app/fr/imprint" />
+    <link rel="alternate" hreflang="es" href="https://compressimages.app/es/imprint" />
+    <link rel="alternate" hreflang="it" href="https://compressimages.app/it/imprint" />
+    <link rel="alternate" hreflang="nl" href="https://compressimages.app/nl/imprint" />
+    <link rel="canonical" href="https://compressimages.app/{{ lang }}/imprint" />
+
+    <meta name="description" content="{{ t['imprint_description'] }}">
+    <meta name="robots" content="noindex, follow">
+
+    <meta property="og:title" content="{{ t['imprint_title'] }}">
+    <meta property="og:description" content="{{ t['imprint_description'] }}">
+    <meta property="og:url" content="https://compressimages.app/{{ lang }}/imprint">
+    <meta property="og:image" content="https://compressimages.app/static/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ t['imprint_title'] }}">
+    <meta name="twitter:description" content="{{ t['imprint_description'] }}">
+    <meta name="twitter:image" content="https://compressimages.app/static/og-image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "{{ t['imprint_title'] }}",
+      "description": "{{ t['imprint_description'] }}",
+      "url": "https://compressimages.app/{{ lang }}/imprint"
+    }
+    </script>
+</head>
+<body>
+
+    {% include 'header.html' %}
+
+    <div class="container">
+        <h1>{{ t['imprint_h1'] }}</h1>
+        <p>{{ t['imprint_description'] }}</p>
+
+        <p>{{ t['imprint_text'] }}</p>
+
+        <p>
+          <strong>Amberg Solutions Inhaber Lepschy</strong><br>
+          Messmerhölzli 41<br>
+          8887 Mels<br>
+          {{ t['switzerland'] }}
+        </p>
+    </div>
+
+    {% include 'footer.html' %}
+</body>
+</html>

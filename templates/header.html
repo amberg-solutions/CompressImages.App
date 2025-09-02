@@ -1,0 +1,33 @@
+<header class="site-header">
+  <div class="logo">
+    <a href="/{{ lang }}">
+      <img src="{{ url_for('static', filename='logo.webp') }}" alt="Logo">
+    </a>
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav class="nav" id="nav-menu">
+    <ul class="main-nav">
+      <li><a href="/{{ lang }}#upload">{{ t['compress'] }}</a></li>
+      <li><a href="/{{ lang }}/why-image-compression">{{ t['why_h1'] }}</a></li>
+    </ul>
+    <div class="lang-switch">
+      {% for l in SUPPORTED_LANGS %}
+        {% if l == lang %}
+          <span class="active">{{ l.upper() }}</span>
+        {% else %}
+          <a href="/{{ l }}">{{ l.upper() }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </nav>
+</header>
+
+<script>
+document.getElementById('menu-toggle').addEventListener('click', function() {
+  document.getElementById('nav-menu').classList.toggle('show');
+});
+</script>
